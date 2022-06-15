@@ -20,3 +20,9 @@
 - Run git remote add origin \<link repository\>
 - Run git remote show origin
 - Run git push -u origin master
+
+### Config tsc
+
+- Run tsc --init
+- Reference: https://www.typescriptlang.org/
+- Uncomment experimentalDecorators, rootDir, baseUrl, sourceMap, outDir, moduleResolution
