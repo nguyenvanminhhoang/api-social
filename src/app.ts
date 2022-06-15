@@ -22,9 +22,12 @@ class App {
 
   private connectToMongo() {
     try {
-      const connString =
-        "mongodb+srv://api-social:bAIYSIj2uzagQSmB@master.7hsza.mongodb.net/api-social?retryWrites=true&w=majority";
-      mongoose.connect(connString);
+      const connectionString = process.env.MONGODB_URI;
+      if(!connectionString) {
+        console.log("Connection string is invalid");
+        return;
+      }
+      mongoose.connect(connectionString);
       console.log("Mongoose is connected...");
     } catch (error) {
       console.log("Can't connect to MongoDB, please check and try again...");
