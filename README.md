@@ -33,3 +33,9 @@
 - Run yarn add typescript @types/express nodemon ts-node --dev
 - Add scripts server: nodemon \<baseUrl\> in package.json
 - Run yarn server to start
+
+### Connect to MongoDB
+
+- Run yarn add mongoose
+- Run yarn add @types/mongoose
+
