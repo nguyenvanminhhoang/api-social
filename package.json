@@ -1,0 +1,8 @@
+{
+  "name": "api-social",
+  "version": "1.0.0",
+  "description": "This is the api project for mini social website.",
+  "main": "src/server.ts",
+  "author": "nguyenvanminhhoang",
+  "license": "MIT"
+}
