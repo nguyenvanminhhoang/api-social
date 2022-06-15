@@ -6,6 +6,7 @@ import helmet from "helmet";
 import cors from "cors";
 import { Route } from "@core/interfaces";
 import { Logger } from "@core/utils";
+import { errorMiddleware } from "@core/middleware";
 
 class App {
   public app: express.Application;
@@ -38,6 +39,8 @@ class App {
       this.app.use(morgan("dev"));
       this.app.use(cors({ origin: "your.domain.com", credentials: true }));
     }
+
+    this.app.use(errorMiddleware);
   }
 
   private connectToMongo() {
