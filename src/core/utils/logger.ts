@@ -1,4 +1,3 @@
-import { format } from "path";
 import winston from "winston";
 
 const Logger: winston.Logger = winston.createLogger({
